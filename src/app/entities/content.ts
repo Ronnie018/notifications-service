@@ -11,13 +11,11 @@ export class Content {
 
   constructor(content: string) {
     const isContentLengthValid = this.validateContentLength(content);
-    
+
     if (!isContentLengthValid) {
-      throw new Error("content length error")
+      throw new Error('content length error');
     }
 
     this.content = content;
   }
 }
-
-const content = new Content('ronnie');
